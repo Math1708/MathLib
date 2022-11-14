@@ -63,6 +63,9 @@ def nums_primos(m):
     with open(f'numeros_primos{num}.txt','w') as arquivo:
         for valor in numeros_primos:
             arquivo.write(str(valor) + '\n')
+    arquivo.close(
+
+    )
 
 def nums_primos_time(m):
     import os
@@ -131,3 +134,4 @@ def nums_primos_time(m):
     with open(f'numeros_primos.txt','w') as arquivo:
         for valor in numeros_primos:
             arquivo.write(str(valor) + '\n')
+    arquivo.close()
