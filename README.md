@@ -8,8 +8,8 @@ O maior motivo para criar esta biblioteca, foi pela necessidade de criar um bot 
     Linguagem utilizada:<ul>
   <li>:snake: <a href="https://www.python.org/">Python</a></li></ul>
   Bibliotecas:<ul>
-  <li>Biblioteca :clock6: <a href="https://docs.python.org/3/library/time.html">Time</a></li>
-  <li>Biblioteca :desktop_computer: <a href="https://docs.python.org/3/library/os.html">OS</a></li>
+  <li>:clock6: <a href="https://docs.python.org/3/library/time.html">Time</a></li>
+  <li>:desktop_computer: <a href="https://docs.python.org/3/library/os.html">OS</a></li>
 </ul>
 </ul>
 
