@@ -16,8 +16,8 @@ def fat(num):
     return result
 
 def nums_primos(m):
-    import time
     import os
+    import time
 
     num = 0
     numeros_primos = []
@@ -65,8 +65,12 @@ def nums_primos(m):
             arquivo.write(str(valor) + '\n')
 
 def nums_primos_time(m):
-    import time
     import os
+    import time
+
+    c = 0
+
+    loop = 100
 
     num = 0
     numeros_primos = []
@@ -76,26 +80,42 @@ def nums_primos_time(m):
         os.system(command)
 
     cmd('cls')
-    for c in range(2, 100):
+    while True:
+        c = c + 1
         if c != 2 and c != 3 and c != 5 and c != 7:
             if (c % 2) != 0 and (c % 3) != 0 and (c % 5) != 0 and (c % 7) != 0:
                 num = num + 1
                 p = (c / m) * 100
                 print(f"[\033[42;1;33m{c}\033[m] - Encontrando números primos...        {p:.1f}")
                 numeros_primos.append(c)
+                if ((time.time() - inicio)/60) >= m:
+                    break
+                else:
+                    pass
             else:
                 p = (c / m) * 100
                 print(f"[{c}] -  Encontrando números primos...        {p:.1f}")
-                pass   
+                if ((time.time() - inicio)/60) >= m:
+                    break
+                else:
+                    pass   
 
         if c == 2 or c == 5 or c == 7 or c == 3:
             p = (c / m) * 100
             print(f"[\033[42;1;33m{c}\033[m] -  Encontrando números primos...        {p:.1f}")
             num = num + 1
             numeros_primos.append(c)
+            if ((time.time() - inicio)/60) >= m:
+                break
+            else:
+                pass
         if c == 1:
             p = (c / m) * 100
             print(f"[{c}] -  Encontrando números primos...        {p:.1f}")
+            if ((time.time() - inicio)/60) >= m:
+                break
+            else:
+                loop = loop + 1
             pass
 
     fim = time.time()
